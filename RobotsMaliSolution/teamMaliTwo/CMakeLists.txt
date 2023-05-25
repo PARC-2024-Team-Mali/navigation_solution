@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(robotsmalisolution)
+project(team_mali_two)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -118,7 +118,7 @@ generate_messages(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES robotsmalisolution
+#  LIBRARIES team_mali_two
   CATKIN_DEPENDS actionlib actionlib_msgs geometry_msgs message_generation nav_msgs roscpp
 #  DEPENDS system_lib
 )
@@ -136,7 +136,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/robotsmalisolution.cpp
+#   src/${PROJECT_NAME}/team_mali_two.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -147,14 +147,14 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/robotsmalisolution_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/team_mali_two_node.cpp)
 add_executable(convert src/convert.cpp)
 target_link_libraries(convert ${catkin_LIBRARIES})
-add_dependencies(convert robotsmalisolution_generate_messages_cpp)
+add_dependencies(convert team_mali_two_generate_messages_cpp)
 
 add_executable(action_server src/action_server.cpp)
 target_link_libraries(action_server ${catkin_LIBRARIES})
-add_dependencies(action_server ${robotsmalisolution_EXPORTED_TARGETS})
+add_dependencies(action_server ${team_mali_two_EXPORTED_TARGETS})
 
 #add_executable(my_node src/my_node.cpp)
 #target_link_libraries(my_node 
@@ -224,7 +224,7 @@ add_dependencies(action_server ${robotsmalisolution_EXPORTED_TARGETS})
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_robotsmalisolution.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_team_mali_two.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

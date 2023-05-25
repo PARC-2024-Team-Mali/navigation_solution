@@ -1,6 +1,6 @@
 #include "ros/ros.h"
-#include "robotsmalisolution/TrajetAction.h"
-#include "robotsmalisolution/TrajetGoal.h"
+#include "team_mali_two/TrajetAction.h"
+#include "team_mali_two/TrajetGoal.h"
 #include "actionlib/server/simple_action_server.h"
 #include "geometry_msgs/Pose2D.h"
 #include <complex>
@@ -13,11 +13,11 @@ class Move
 	private:
 		ros::NodeHandle node;
 
-		actionlib::SimpleActionServer<robotsmalisolution::TrajetAction> action;
+		actionlib::SimpleActionServer<team_mali_two::TrajetAction> action;
 
-		robotsmalisolution::TrajetFeedback feedback;
+		team_mali_two::TrajetFeedback feedback;
 
-		robotsmalisolution::TrajetResult result;
+		team_mali_two::TrajetResult result;
 		
 		ros::Subscriber sub_pose;
 
@@ -33,7 +33,7 @@ class Move
 	
 		geometry_msgs::Pose2D current_pose;
 		// fonction callback if goal is send
-		void execute(const robotsmalisolution::TrajetGoal::ConstPtr&);
+		void execute(const team_mali_two::TrajetGoal::ConstPtr&);
 
 		// fonction callback for robot position
 		void poseCallback(const geometry_msgs::Pose2D::ConstPtr&);
@@ -84,7 +84,7 @@ void Move::poseCallback(const geometry_msgs::Pose2D::ConstPtr& pose)
 	current_pose = *pose;
 
 }
-void Move::execute(const robotsmalisolution::TrajetGoal::ConstPtr& goal)
+void Move::execute(const team_mali_two::TrajetGoal::ConstPtr& goal)
 {
 
 	ros::Rate rate(10);

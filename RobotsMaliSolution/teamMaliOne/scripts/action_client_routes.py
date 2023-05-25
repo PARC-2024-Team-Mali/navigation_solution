@@ -3,7 +3,7 @@
 import sys
 import rospy 
 import actionlib
-from test_pack.msg import TrajetAction, TrajetGoal
+from team_mali_one.msg import TrajetAction, TrajetGoal
 from work_module import get_middle_segment, avoid_rotate_decision
 from peg_location import cordinate
 

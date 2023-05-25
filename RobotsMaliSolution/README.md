@@ -20,5 +20,5 @@
 
 > **Task1 : Pour l'exécution de notre solution on fait :**
 >
-> * **`roslaunch rmsolution task1_solution.launch route:=Route` .**
+> * **`roslaunch team_mali_one task1_solution.launch route:=Route` .**
 > * **Route désigne la route choisit, par défaut la route1 est chosit.**
