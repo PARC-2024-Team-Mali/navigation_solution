@@ -156,6 +156,10 @@ add_executable(action_server src/action_server.cpp)
 target_link_libraries(action_server ${catkin_LIBRARIES})
 add_dependencies(action_server ${team_mali_two_EXPORTED_TARGETS})
 
+add_executable(client src/client.cpp)
+target_link_libraries(client ${catkin_LIBRARIES})
+add_dependencies(client ${team_mali_two_EXPORTED_TARGETS})
+
 #add_executable(my_node src/my_node.cpp)
 #target_link_libraries(my_node 
     #${catkin_LIBRARIES}

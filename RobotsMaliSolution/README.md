@@ -17,7 +17,9 @@
 * > **Task1 :** ***Pour la réalisation de notre approche nous n'avons pas installer de package.***
 
 # Description et Exécution de commande(s)
-
+> **Route 1 temps d'execution 2 minute 15 seconde
+> **Route 2 temps d'execution 2 minute 10 seconde
+> **Route 3 temps d'execution 2 minute 5 seconde
 > **Task1 : Pour l'exécution de notre solution on fait :**
 >
 > * **`roslaunch team_mali_one task1_solution.launch route:=Route` .**

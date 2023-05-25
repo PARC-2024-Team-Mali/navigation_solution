@@ -1,10 +1,10 @@
 <launch>
 
-<arg name="route" default="route1" />
-<node name= "ConvertQ2E" pkg="Rmsolution" type="convert"/>
-<node name="ActionNode" pkg="Rmsolution" type="action_server" output="screen"/>
-<!-- <node name="move_client_node" pkg="Rmsolution" type="action_client_routes.py" args="1" output="screen" if="$(eval route=='route1')" /> -->
-<!-- <node name="move_client_node" pkg="Rmsolution" type="action_client_routes.py" args="2" output="screen" if="$(eval route=='route2')" /> -->
-<!-- <node name="move_client_node" pkg="Rmsolution" type="action_client_routes.py" args="3" output="screen" if="$(eval route=='route3')" /> -->
+	<arg name="route" default="route1" />
+	<node name= "ConvertQ2E" pkg="team_mali_two" type="convert"/>
+	<node name="ActionNode" pkg="team_mali_two" type="action_server" output="screen"/>
+	<node name="move_client_node" pkg="team_mali_two" type="action_client_routes.py" args="1" output="screen" if="$(eval route=='route1')" /> 
+	<node name="move_client_node" pkg="team_mali_two" type="action_client_routes.py" args="2" output="screen" if="$(eval route=='route2')" /> 
+	<node name="move_client_node" pkg="team_mali_two" type="action_client_routes.py" args="3" output="screen" if="$(eval route=='route3')" /> 
 
 </launch>
