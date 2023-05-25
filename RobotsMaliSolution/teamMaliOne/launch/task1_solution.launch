@@ -1,10 +1,10 @@
 <launch>
 
-<!-- <arg name="route" default="route1" /> -->
+ <arg name="route" default="route1" /> 
 	<node name="conversion_node" pkg="team_mali_one" type="conversion.py"/>
 	<node name="move_server_node" pkg="team_mali_one" type="action_server.py" output="screen"/> 
-<!-- <node name="move_client_node" pkg="team_mali_one" type="action_client_routes.py" args="1" output="screen" if="$(eval route=='route1')" /> -->
-<!-- <node name="move_client_node" pkg="team_mali_one" type="action_client_routes.py" args="2" output="screen" if="$(eval route=='route2')" /> -->
-<!-- <node name="move_client_node" pkg="team_mali_one" type="action_client_routes.py" args="3" output="screen" if="$(eval route=='route3')" /> -->
+ <node name="move_client_node" pkg="team_mali_one" type="action_client_routes.py" args="1" output="screen" if="$(eval route=='route1')" /> 
+ <node name="move_client_node" pkg="team_mali_one" type="action_client_routes.py" args="2" output="screen" if="$(eval route=='route2')" /> 
+ <node name="move_client_node" pkg="team_mali_one" type="action_client_routes.py" args="3" output="screen" if="$(eval route=='route3')" /> 
 
 </launch>
