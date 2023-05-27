@@ -97,8 +97,8 @@ def move_client() :
     #route2
     elif arg[1] == "2" :
     
-        goal.trajet_x = [but5.real, avoid_obs2_x, but4.real, goal_x4, goal_x3, but3_real, but2.real, goal_x2, goal_x1, avoid_obs1_x, goal_x6, target.real]
-        goal.trajet_y = [but5.imag, avoid_obs2_y, but4.imag, goal_y4, goal_y3, but3_imag, but2.imag, goal_y2, goal_y1, avoid_obs1_y, goal_y6, target.imag]
+        goal.trajet_x = [but5.real, avoid_obs2_x, but4.real, goal_x4, goal_x3, but3_real, but2.real, goal_x2, goal_x1, avoid_obs1_x, but6.real, target.real]
+        goal.trajet_y = [but5.imag, avoid_obs2_y, but4.imag, goal_y4, goal_y3, but3_imag, but2.imag, goal_y2, goal_y1, avoid_obs1_y, but6.imag, target.imag]
 
     #route3
     elif arg[1] == "3" :

@@ -80,9 +80,9 @@ generate_messages(
    actionlib_msgs   geometry_msgs   nav_msgs
  )
 
- catkin_package()
+#catkin_package()
 
-  include_directories(
+include_directories(
     ${catkin_INCLUDE_DIRS}
     ${parc_robot_INCLUDE_DIRS}
 )
@@ -155,6 +155,14 @@ add_dependencies(convert robotsmalisolution_generate_messages_cpp)
 add_executable(action_server src/action_server.cpp)
 target_link_libraries(action_server ${catkin_LIBRARIES})
 add_dependencies(action_server ${robotsmalisolution_EXPORTED_TARGETS})
+
+add_executable(locate src/locate.cpp)
+target_link_libraries(locate ${catkin_LIBRARIES})
+add_dependencies(locate robotsmalisolution_generate_messages_cpp)
+
+add_executable(client src/client.cpp)
+target_link_libraries(client ${catkin_LIBRARIES})
+add_dependencies(client robotsmalisolution_generate_messages_cpp)
 
 #add_executable(my_node src/my_node.cpp)
 #target_link_libraries(my_node 
