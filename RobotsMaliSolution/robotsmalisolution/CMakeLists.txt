@@ -156,10 +156,6 @@ add_executable(action_server src/action_server.cpp)
 target_link_libraries(action_server ${catkin_LIBRARIES})
 add_dependencies(action_server ${robotsmalisolution_EXPORTED_TARGETS})
 
-add_executable(locate src/locate.cpp)
-target_link_libraries(locate ${catkin_LIBRARIES})
-add_dependencies(locate robotsmalisolution_generate_messages_cpp)
-
 add_executable(client src/client.cpp)
 target_link_libraries(client ${catkin_LIBRARIES})
 add_dependencies(client robotsmalisolution_generate_messages_cpp)
