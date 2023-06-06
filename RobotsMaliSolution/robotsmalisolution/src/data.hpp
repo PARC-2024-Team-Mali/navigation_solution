@@ -83,13 +83,13 @@ void done() {
     //cout  << obs_1.real()  << " "  << obs_1.imag()  << endl;
     //cout  << valu_2.real()  << " "  << valu_2.imag()  << endl;
 
-    route_1_x = {obs_1.real(), valu_2.real(), valu_3.real(), val_3_real__, val_4.real(), valu_4.real(), valu_5.real(), val_5.real(), obs_2.real(),val_6.real(), goal.real() };
-    route_1_y = {obs_1.imag(), valu_2.imag(), valu_3.imag(), val_3_imag__, val_4.imag(), valu_4.imag(), valu_5.imag(), val_5.imag(), obs_2.imag(),val_6.imag(), goal.imag() };
+    route_1_x = {val_1.real(), obs_1.real(), valu_2.real(), valu_3.real(), val_3_real__, val_4.real(), valu_4.real(), valu_5.real(), val_5.real(), obs_2.real(),val_6.real(), goal.real()};
+    route_1_y = {val_1.imag(), obs_1.imag(), valu_2.imag(), valu_3.imag(), val_3_imag__, val_4.imag(), valu_4.imag(), valu_5.imag(), val_5.imag(), obs_2.imag(),val_6.imag(), goal.imag()};
 
-    route_2_x = {obs_2.real(), val_5.real(), valu_5.real(), valu_4.real(), val_4_real__, val_3.real(), valu_3.real(), valu_2.real(), obs_1.real(), val_1.real(), goal.real()};
-    route_2_y = {obs_2.imag(), val_5.imag(), valu_5.imag(), valu_4.imag(), val_4_imag__, val_3.imag(), valu_3.imag(), valu_2.imag(), obs_1.imag(), val_1.imag(), goal.imag()};
+    route_2_x = {val_6.real(), obs_2.real(), val_5.real(), valu_5.real(), valu_4.real(), val_4_real__, val_3.real(), valu_3.real(), valu_2.real(), obs_1.real(), val_1.real(), goal.real()};
+    route_2_y = {val_6.imag(), obs_2.imag(), val_5.imag(), valu_5.imag(), valu_4.imag(), val_4_imag__, val_3.imag(), valu_3.imag(), valu_2.imag(), obs_1.imag(), val_1.imag(), goal.imag()};
     
-    route_3_x = {obs_2.real(), val_6.real(), valu_6.real(), valu_3.real(), val_3_real__, val_4.real(), valu_4.real(), valu_1.real(), val_1.real(), obs_1.real(), goal.real()};
-    route_3_y = {obs_2.imag(), val_6.imag(), valu_6.imag(), valu_3.imag(), val_3_imag__, val_4.imag(), valu_4.imag(), valu_1.imag(), val_1.imag(), obs_1.imag(), goal.imag()};
+    route_3_x = {val_5.real(), obs_2.real(), val_6.real(), valu_6.real(), valu_3.real(), val_3_real__, val_4.real(), valu_4.real(), valu_1.real(), val_1.real(), obs_1.real(), goal.real()};
+    route_3_y = {val_5.imag(), obs_2.imag(), val_6.imag(), valu_6.imag(), valu_3.imag(), val_3_imag__, val_4.imag(), valu_4.imag(), valu_1.imag(), val_1.imag(), obs_1.imag(), goal.imag()};
 }
 
