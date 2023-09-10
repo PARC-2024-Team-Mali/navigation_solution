@@ -6,31 +6,7 @@ Introduction:</BR>
     
 L'utilisation de PARC AgRobot (Robot agricole)  en Afrique présente plusieurs avantages convaincants. Ces robots améliorent l'efficacité agricole, réduisent la pénurie de main-d'œuvre, augmentent la précision des opérations, s'adaptent aux conditions locales et réduisent l'utilisation excessive de produits chimiques. Cependant, l'adoption des robots en agriculture peut rencontrer des défis tels que le coût, l'accès à l'électricité, la formation des agriculteurs, etc. Malgré ces défis, l'utilisation de robots peut contribuer à améliorer la productivité et la durabilité de l'agriculture en Afrique.
 
-    
 
-Pays de l’équipe: MALI
-
-Noms des membres de l’équipe:
-
-    Nom et Prénom: 
-    Etudiant: 
-    Ecole: .
-
-    Nom et Prénom: 
-    Etudiant : 
-    Ecole: .
-
-    Nom et Prénom: 
-    Etudiant:
-    Ecole:.
-
-    Nom et Prénom: 
-    Ecole: .
-    Ecole:.
-    
-    Nom et Prénom: 
-    Etudiant:
-    Ecole:.
     
 Dépendances
     Les Packages nécessaires sont:    (requis Python version 3)
